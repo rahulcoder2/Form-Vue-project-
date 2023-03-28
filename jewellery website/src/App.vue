@@ -138,7 +138,98 @@
         </div>
       </div>
     </div>
+
+    <!-- End of order project -->
+    <div class="gallery">
+      <div class="image">
+        <div class="image1">
+          <img src="./images/Image 1.png" />
+        </div>
+        <div class="image2">
+          <img src="./images/Image 2.png" />
+        </div>
+        <div class="image3">
+          <img src="./images/Image 3.png" />
+        </div>
+        <div class="image4">
+          <img src="./images/Image 4.png" />
+        </div>
+        <div class="image5">
+          <img src="./images/Image 5.png" />
+        </div>
+        <div class="image6">
+          <img src="./images/Image 6.png" />
+        </div>
+      </div>
+    </div>
   </section>
+
+  <footer>
+    <div class="footercontain">
+      <div class="about">
+        <div class="logo">
+          <img src="./images/Logo.svg" />
+        </div>
+        <p>
+          Quam pulvinar leo euismod id eu ultricies, Placerat proin rhoncus sit.
+        </p>
+        <h4>Contact Us</h4>
+        <div class="paymentmethod">
+          <img src="./images/🦆 icon _Visa_.svg" />
+          <img src="./images/🦆 icon _PayPal_.svg" />
+          <img src="./images/🦆 icon _MasterCard_.svg" />
+          <img src="./images/🦆 icon _maestro_.svg" />
+        </div>
+      </div>
+      <div class="helpfull-link">
+        <div class="link">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help & About us</a></li>
+            <li><a href="#">Shipping & Return</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="delivery">
+          <h4>Delivery</h4>
+          <ul>
+            <li><a href="#">How it Work</a></li>
+            <li><a href="#">Free Delivery</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="customer-services">
+        <h4>Customer Services</h4>
+        <ul>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Downloads</a></li>
+          <li><a href="#">Addresses</a></li>
+          <li><a href="#">Account details</a></li>
+          <li><a href="#">Lost Password</a></li>
+        </ul>
+      </div>
+      <div class="need-help">
+        <h4>Need help?</h4>
+        <ul>
+          <li><a href="#">+61 (0) 383 766 284</a></li>
+          <li><a href="#">+61 (0) 383 766 284</a></li>
+        </ul>
+        <p>
+          Monday - Friday: <br />
+          8am - 5pm
+        </p>
+        <p>
+          Saturday <br />
+          9am - 4pm
+        </p>
+      </div>
+    </div>
+    <div class="copyright">
+      <h4>&copy 2022 - Jewelry Management System - Vue.js Project</h4>
+    </div>
+  </footer>
 </template>
 
 <style>
@@ -196,7 +287,7 @@ header {
 }
 
 nav {
-  padding: 0 172px 0 166px;
+  padding: 0 162px;
   display: flex;
   justify-content: space-between;
   background-color: var(--bg-color);
@@ -205,8 +296,6 @@ nav {
 }
 
 nav.logo {
-  width: 123px;
-  height: 36px;
   cursor: pointer;
 }
 
@@ -272,10 +361,16 @@ nav li a:hover {
 }
 
 .hero-section .icon {
+  display: flex;
+  justify-content: center;
   position: absolute;
-  bottom: -42px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: -25px;
+  left: calc(50% - 25px);
+}
+
+.hero-section .icon img {
+  width: 50px;
+  height: 50px;
 }
 
 /* header end here  */
@@ -315,7 +410,7 @@ nav li a:hover {
   color: #ffffff;
 }
 
-.icon {
+.products .icon {
   padding-top: 98px;
   color: #fff;
   align-items: center;
@@ -324,6 +419,11 @@ nav li a:hover {
   display: flex;
   justify-content: center;
   gap: 100px;
+}
+
+.products .icon img {
+  width: 50px;
+  height: 50px;
 }
 
 /* banner */
@@ -442,5 +542,69 @@ section .order-product {
   padding-left: 8px;
 }
 
+/* gallery  */
 
+.gallery {
+  padding: 0 155px;
+  margin-top: 60px;
+}
+
+.gallery .image {
+  display: flex;
+  width: 100%;
+  border: none;
+}
+/* footer */
+
+footer {
+  margin-top: 40px;
+  margin: 40px 155px 10px;
+  /* background-color: #dfe0da; */
+}
+
+.footercontain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footercontain h4,
+ul,
+p {
+  padding-bottom: 10px;
+}
+
+/* logo */
+
+.footercontain .about .logo {
+  filter: invert(50);
+}
+/* about  */
+.footercontain .about {
+  width: 232px;
+  height: 206px;
+}
+
+.footercontain p,
+a {
+  padding-top: 10px;
+  font-family: "Heebo";
+  font-size: 14px;
+  line-height: 141.4%;
+  /* or 20px */
+  letter-spacing: 0.13em;
+  color: #2d67d4;
+}
+
+.footercontain .about .paymentmethod img {
+  padding-right: 10px;
+}
+
+.footercontain .need-help p {
+  padding: 2px 0;
+}
+
+/* copyright */
+.copyright {
+  margin-top: 30px;
+}
 </style>
